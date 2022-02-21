@@ -56,7 +56,7 @@ export default {
     },
 
     bgColor: {
-      default: 'var(--dark-green)',
+      default: 'var(--dark-purple)',
       type: String
     },
 
