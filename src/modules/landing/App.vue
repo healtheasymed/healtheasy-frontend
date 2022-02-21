@@ -1,13 +1,20 @@
 <template>
-  <p>Landing Page</p>
+  <Header />
+  <Home />
 </template>
 
 <script>
+import Header from "@/components/landing/blocks/Header.vue";
+import Home from "@/components/landing/sections/Home.vue";
+
 export default {
-  name: "LandingPage"
-}
+  name: "LandingPage",
+
+  components: {
+    Header,
+    Home
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,5 +1,9 @@
 # health-easy
 
+# TODO:
+[] animate.css
+[] mdi-icons ou svg factory
+
 ## Project setup
 ```
 npm install

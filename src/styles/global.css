@@ -7,6 +7,7 @@
   -primary-bg: #F3F3F3;
   -primary-text: #18191F;
 
+  --black: #000000;
   --blue: #223CBB;
   --gray: #C5C5C5;
   --green: #54BD89;
@@ -46,8 +47,10 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
+.router-link-active,
+.router-link-exact-active,
 a:hover {
-  color: var(--dark-green);
+  color: var(--dark-blue) !important;
 }
 
 button:hover,
