@@ -1,9 +1,5 @@
 # health-easy
 
-# TODO:
-[] animate.css
-[] mdi-icons ou svg factory
-
 ## Project setup
 ```
 npm install
@@ -21,3 +17,10 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+## TODO:
+- [ ] animate.css
+- [ ] mdi-icons ou svg factory
+- [ ] trocar imagem dos mockups
