@@ -43,3 +43,36 @@ export const especialidades = [
     nome: "Dermatologistas",
   },
 ];
+
+export const funcionalidades = [
+  {
+    id: 1,
+    nome: "Funcionalidade 1",
+    descricao: "Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.",
+    icone: "Funcionalidade 1",
+  },
+  {
+    id: 2,
+    nome: "Funcionalidade 2",
+    descricao: "Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.",
+    icone: "Funcionalidade 1",
+  },
+  {
+    id: 3,
+    nome: "Funcionalidade 3",
+    descricao: "Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.",
+    icone: "Funcionalidade 1",
+  },
+  {
+    id: 4,
+    nome: "Funcionalidade 4",
+    descricao: "Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.",
+    icone: "Funcionalidade 1",
+  },
+  {
+    id: 5,
+    nome: "Funcionalidade 5",
+    descricao: "Funcionalidade 1 Funcionalidade 1 Funcionalidade 1 Funcionalidade 1. Funcionalidade 1.",
+    icone: "Funcionalidade 1",
+  },
+];

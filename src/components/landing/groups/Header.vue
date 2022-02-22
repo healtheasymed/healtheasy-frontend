@@ -83,7 +83,7 @@ export default {
 <style scoped>
 header {
   background: var(--white);
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--light-gray);
   min-height: 8vh;
   padding: 20px 0;
   position: sticky;
