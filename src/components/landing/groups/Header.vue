@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import { menu } from "@/static/landing-page.js";
+import { menu } from "@/static/landing-page";
 import Button from "@/components/landing/elements/Button";
 
 export default {

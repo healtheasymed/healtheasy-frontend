@@ -25,3 +25,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [ ] mdi-icons ou svg factory
 - [ ] trocar imagem dos mockups
 - [ ] alinhar logomarca com a escrita
+- [ ] responsividade

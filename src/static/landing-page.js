@@ -20,3 +20,26 @@ export const menu = [
     link: "#contato",
   },
 ];
+
+export const especialidades = [
+  {
+    id: 1,
+    nome: "Clínicas Médicas",
+  },
+  {
+    id: 2,
+    nome: "Hospitais",
+  },
+  {
+    id: 3,
+    nome: "Consultórios",
+  },
+  {
+    id: 4,
+    nome: "Cardiologistas",
+  },
+  {
+    id: 5,
+    nome: "Dermatologistas",
+  },
+];
