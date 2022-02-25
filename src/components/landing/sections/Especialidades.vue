@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 #especialidades {
-  min-height: 65vh;
+  min-height: 55vh;
 }
 
 .especialidades-content {

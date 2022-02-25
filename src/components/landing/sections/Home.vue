@@ -48,6 +48,7 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   margin-inline: auto;
   max-width: 1200px;
+  min-height: 75vh;
 }
 
 .section-left {
@@ -78,7 +79,7 @@ export default {
   max-width: 100%;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .home-content {
     max-width: 1000px;
   }
@@ -123,5 +124,5 @@ export default {
   .section-right {
     width: 60%;
   }
-}
+} */
 </style>

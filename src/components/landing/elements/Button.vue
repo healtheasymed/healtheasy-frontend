@@ -7,7 +7,7 @@
     :style="{
       backgroundColor: bgColor,
       height: height + 'px',
-      width: width + 'px'
+      width: width + 'px',
     }"
     @click="$emit('click')"
   >
@@ -22,7 +22,7 @@
     :style="{
       backgroundColor: bgColor,
       height: height + 'px',
-      width: width + 'px'
+      width: width + 'px',
     }"
   >
     {{ text }}
@@ -31,50 +31,51 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
 
   props: {
     text: {
-      default: '',
+      default: "",
       required: true,
-      type: String
+      type: String,
     },
 
     link: {
-      default: '#',
-      type: String
+      default: "#",
+      type: String,
     },
 
     type: {
-      default: '',
-      type: String
+      default: "",
+      type: String,
     },
 
     target: {
-      default: '',
-      type: String
+      default: "",
+      type: String,
     },
 
     bgColor: {
-      default: 'var(--dark-purple)',
-      type: String
+      default: "var(--dark-purple)",
+      type: String,
     },
 
     height: {
       default: 40,
-      type: Number
+      type: Number,
     },
 
     width: {
       default: 140,
-      type: Number
-    }
-  }
-}
+      type: Number,
+    },
+  },
+};
 </script>
 
 <style scoped>
-a, button {
+a,
+button {
   border: none;
   border-radius: 4px;
   color: var(--white) !important;
@@ -85,12 +86,14 @@ a, button {
   transition: all 0.2s ease-in-out;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   opacity: 0.8;
 }
 
 @media (max-width: 615px) {
-  a.default-width, button.default-width {
+  a.default-width,
+  button.default-width {
     width: 100px !important;
   }
 }

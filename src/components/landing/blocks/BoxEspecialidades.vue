@@ -46,7 +46,7 @@ export default {
   row-gap: 20px;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   #box-especialidades {
     max-width: 1000px;
   }
@@ -72,5 +72,5 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     max-width: 300px;
   }
-}
+} */
 </style>

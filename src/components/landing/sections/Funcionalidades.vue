@@ -29,11 +29,10 @@ export default {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 6vh 0;
+  justify-content: center;
   margin-inline: auto;
   max-width: 1200px;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .titulo {

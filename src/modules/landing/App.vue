@@ -3,13 +3,17 @@
   <Home />
   <Especialidades />
   <Funcionalidades />
+  <SobreApp1 />
+  <SobreApp2 />
 </template>
 
 <script>
 import Header from "@/components/landing/groups/Header";
 import Home from "@/components/landing/sections/Home";
-import Especialidades from "@/components/landing/groups/Especialidades";
-import Funcionalidades from "@/components/landing/groups/Funcionalidades";
+import Especialidades from "@/components/landing/sections/Especialidades";
+import Funcionalidades from "@/components/landing/sections/Funcionalidades";
+import SobreApp1 from '@/components/landing/sections/SobreApp1';
+import SobreApp2 from '@/components/landing/sections/SobreApp2';
 
 export default {
   name: "LandingPage",
@@ -19,6 +23,8 @@ export default {
     Home,
     Especialidades,
     Funcionalidades,
+    SobreApp1,
+    SobreApp2,
   },
 };
 </script>
