@@ -46,6 +46,7 @@ export default {
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  justify-content: center;
 }
 
 .section-left h1 {
