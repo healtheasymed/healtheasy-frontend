@@ -7,6 +7,7 @@
   <SobreApp2 />
   <Planos />
   <Contato />
+  <Footer />
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import SobreApp1 from '@/components/landing/sections/SobreApp1';
 import SobreApp2 from '@/components/landing/sections/SobreApp2';
 import Planos from "@/components/landing/sections/Planos";
 import Contato from "@/components/landing/sections/Contato";
+import Footer from "@/components/landing/sections/Footer";
 
 export default {
   name: "LandingPage",
@@ -31,6 +33,7 @@ export default {
     SobreApp2,
     Planos,
     Contato,
+    Footer,
   },
 };
 </script>

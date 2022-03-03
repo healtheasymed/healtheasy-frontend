@@ -107,10 +107,10 @@ export default {
 
   computed: {
     model: {
-      get() {
+      get () {
         return this.value;
       },
-      set(value) {
+      set (value) {
         this.$emit('input', value);
       },
     },
