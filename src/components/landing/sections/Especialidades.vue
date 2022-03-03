@@ -25,15 +25,38 @@ export default {
 
 <style scoped>
 #especialidades {
-  min-height: 55vh;
+  min-height: 70vh;
 }
 
 .content {
   background: var(--light-blue);
   height: 45vh;
+  max-width: 100%;
 }
 
 .titulo p {
   color: var(--dark-blue);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  #especialidades {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 665px) {
+  #especialidades {
+    min-height: 115vh;
+  }
+}
+
+@media (max-width: 425px) {
+  #especialidades {
+    min-height: 125vh;
+  }
+}
+
+/* TODO: deixar dinamico */
 </style>

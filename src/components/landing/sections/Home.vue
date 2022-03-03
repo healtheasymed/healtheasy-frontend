@@ -67,7 +67,6 @@ export default {
   .content {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
-    max-width: 700px;
     min-height: 100vh;
   }
 

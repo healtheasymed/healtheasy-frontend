@@ -56,11 +56,4 @@ export default {
   color: var(--gray);
   text-align: center;
 }
-
-@media (max-width: 616px) {
-  .card-especialidade {
-    height: auto;
-    width: 260px;
-  }
-}
 </style>

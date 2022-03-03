@@ -40,4 +40,16 @@ export default {
   place-content: center;
   place-items: center;
 }
+
+@media (max-width: 1024px) {
+  #box-funcionalidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #box-funcionalidades {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

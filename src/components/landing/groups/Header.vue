@@ -87,7 +87,7 @@ header {
   min-height: 8vh;
   padding: 20px 0;
   position: sticky;
-  top: 0px;
+  top: -1px;
   z-index: 999;
 }
 

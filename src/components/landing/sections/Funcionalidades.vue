@@ -42,15 +42,11 @@ export default {
 
 .titulo h2 {
   color: var(--dark-blue);
-  font-weight: 700;
   font-size: 2.6rem;
-  margin-bottom: 10px;
 }
 
 .titulo p {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   width: 60%;
 }
 </style>

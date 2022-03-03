@@ -98,8 +98,8 @@ li {
   min-height: 100vh;
 }
 
-@media (min-width: 860px) {
+/* @media (min-width: 860px) {
   html {
-    font-size: 87.5%; /* 14px */
+    font-size: 87.5%; /* 14px
   }
-}
+} */
