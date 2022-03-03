@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .card-plano {
-  background: var(--white);
+  background: var(--light-blue);
   border-radius: 6px;
   box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
 
