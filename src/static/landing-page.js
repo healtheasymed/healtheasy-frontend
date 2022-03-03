@@ -188,3 +188,35 @@ export const planos = [
   }
 ];
 
+export const sites = [
+  {
+    id: 1,
+    nome: "Facebook",
+    icone: "facebook",
+    link: "http://www.facebook.com/"
+  },
+  {
+    id: 2,
+    nome: "Twitter",
+    icone: "twitter",
+    link: "http://www.twitter.com/"
+  },
+  {
+    id: 3,
+    nome: "LinkedIn",
+    icone: "linkedin",
+    link: "http://www.linkedin.com/"
+  },
+  {
+    id: 4,
+    nome: "Instagram",
+    icone: "instagram",
+    link: "http://www.instagram.com/"
+  },
+  {
+    id: 5,
+    nome: "Health Easy",
+    icone: "personalizado",
+    link: "http://www.healtheasy.com/"
+  }
+];

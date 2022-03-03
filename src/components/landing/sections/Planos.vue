@@ -1,7 +1,7 @@
 <template>
   <section id="planos">
     <div class="titulo">
-      <h2>Nossos <b>planos</b></h2>
+      <h2>Nossos <span>planos</span></h2>
       <p>
         Lorem ipsum is common placeholder text used to demonstrate the graphic
         elements of a document or visual presentation.
@@ -45,7 +45,7 @@ export default {
   margin-bottom: 10px;
 }
 
-.titulo b {
+.titulo span {
   color: var(--dark-blue);
 }
 
