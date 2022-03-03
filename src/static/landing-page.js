@@ -76,3 +76,115 @@ export const funcionalidades = [
     icone: "Funcionalidade 1",
   },
 ];
+
+export const planos = [
+  {
+    id: 1,
+    valor: "200,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      }
+    ]
+  },
+  {
+    id: 2,
+    valor: "300,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      }
+    ]
+  },
+  {
+    id: 3,
+    valor: "600,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "check"
+      }
+    ]
+  }
+];
+
