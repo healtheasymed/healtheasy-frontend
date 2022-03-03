@@ -29,7 +29,7 @@ export default {
 #box-planos {
   align-items: center;
   display: flex;
-  gap: 40px;
+  gap: 50px;
   justify-content: center;
   margin-inline: auto;
   padding: 0 20px;

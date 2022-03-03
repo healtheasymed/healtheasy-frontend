@@ -59,7 +59,7 @@ export default {
   width: 300px;
 }
 
-.card-plano:hover {
+.card-plano:not(.plano-2):hover {
   border: 2px solid var(--dark-blue);
   transform: scale(1.1);
 }
@@ -70,12 +70,12 @@ export default {
 }
 
 .plano-2 {
+  border: 2px solid var(--dark-purple);
   transform: scale(1.1);
   z-index: 10;
 }
 
 .plano-2:hover {
-  border: 2px solid var(--orange);
   transform: scale(1.2);
 }
 
@@ -97,8 +97,8 @@ export default {
 }
 
 .plano-descricao h6 {
-  border-bottom: 1px solid #E3E3E3;
-  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid var(--dark-blue);
+  border-top: 1px solid var(--dark-gray);
   color: var(--dark-blue);
   font-size: 1.6rem;
 
@@ -113,12 +113,12 @@ export default {
 }
 
 .plano-item {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid var(--dark-blue);
   padding: 10px 0;
 }
 
 .plano-item p {
-  color: var(--gray);
+  color: var(--dark-gray);
 
   align-items: center;
   display: flex;
@@ -138,7 +138,7 @@ export default {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .plano-1,
   .plano-3 {
     margin-top: 0;
@@ -151,5 +151,5 @@ export default {
   .plano-2:hover {
     transform: scale(1.1);
   }
-}
+} */
 </style>
