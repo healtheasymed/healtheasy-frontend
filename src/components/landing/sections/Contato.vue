@@ -1,6 +1,6 @@
 <template>
   <section id="contato" ref="contato">
-    <div class="contato-content">
+    <div class="content">
       <div class="titulo">
         <h2>Entre em <span>contato</span></h2>
         <p>
@@ -49,10 +49,10 @@ export default {
 #contato {
   background: var(--light-blue);
   height: auto;
-  min-width: 80vh;
+  min-height: 80vh;
 }
 
-.contato-content {
+.content {
   align-items: center;
   display: grid;
   grid-gap: 20px;

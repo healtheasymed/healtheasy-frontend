@@ -2,12 +2,12 @@
   <Header />
   <Home />
   <Especialidades />
-  <Funcionalidades />
+  <!-- <Funcionalidades />
   <SobreApp1 />
   <SobreApp2 />
   <Planos />
   <Contato />
-  <Footer />
+  <Footer /> -->
 </template>
 
 <script>
@@ -38,4 +38,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+@import "@/styles/landing-page.css";
+</style>

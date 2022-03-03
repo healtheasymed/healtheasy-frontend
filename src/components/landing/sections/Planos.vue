@@ -32,7 +32,7 @@ export default {
   margin-inline: auto;
   max-width: 1200px;
   min-height: 100vh;
-  padding: 40px 0 80px;
+  padding-bottom: 80px;
 }
 
 .titulo {

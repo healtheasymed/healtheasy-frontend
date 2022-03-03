@@ -1,6 +1,6 @@
 <template>
   <section id="sobre1">
-    <div class="sobre1-content">
+    <div class="content">
       <div class="section-left">
         <h1>Agenda médica na palma da mão</h1>
 
@@ -64,11 +64,9 @@ export default {
     var(--light-blue) 80%,
     var(--light-green) 20%
   );
-  color: var(--primary-text);
-  padding: 40px 0;
 }
 
-.sobre1-content {
+.content {
   align-items: center;
   display: grid;
   grid-gap: 20px;

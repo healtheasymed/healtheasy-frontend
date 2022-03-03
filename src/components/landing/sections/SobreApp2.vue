@@ -1,6 +1,6 @@
 <template>
   <section id="sobre2">
-    <div class="sobre2-content">
+    <div class="content">
       <div class="section-left">
         <h1>Agenda médica na palma da mão</h1>
 
@@ -60,11 +60,9 @@ export default {
 <style scoped>
 #sobre2 {
   background: var(--light-blue);
-  color: var(--primary-text);
-  padding: 40px 0;
 }
 
-.sobre2-content {
+.content {
   align-items: center;
   display: grid;
   grid-auto-flow: dense;

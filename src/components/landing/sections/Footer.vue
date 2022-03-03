@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-content">
+    <div class="content">
       <div class="footer-sobre">
         <img src="@/assets/logos/logo-assinatura-branco.png" alt="Health Easy - Logomarca" />
         <p>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="copyright">
-      <p>© 2021 <span>Health Easy</span></p>
+      <p>© 2021 - <span>Health Easy</span></p>
 
       <ul>
         <li>
@@ -95,10 +95,11 @@ export default {
 footer {
   background: var(--black);
   font-size: 1.2rem;
-  height: 60vh;
+  min-height: 60vh;
 }
 
-.footer-content {
+.content {
+  color: var(--white);
   align-items: center;
   display: grid;
   grid-gap: 20px;
@@ -139,6 +140,7 @@ footer {
   margin-inline: auto;
   max-width: 1200px;
   opacity: 0.8;
+  padding: 0 40px;
 }
 
 .copyright {

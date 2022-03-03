@@ -1,0 +1,36 @@
+section,
+footer {
+  background: var(--white);
+  color: var(--primary-text);
+  height: auto;
+}
+
+.content {
+  padding: 40px;
+}
+
+.content,
+.titulo {
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+b {
+  color: var(--dark-blue);
+}
+
+img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}

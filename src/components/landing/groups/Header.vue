@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="header-content">
+    <div class="content">
       <nav>
-        <ul class="animate__animated animate__bounceInDown">
+        <ul class="">
           <li class="logo-item">
             <router-link to="/#home" class="logo">
               <img src="@/assets/logos/logo-assinatura.png" alt="Health Easy" />
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="header-content mobile">
+    <div class="content mobile">
       <div class="header-top">
         <p @click="isMenuOpen = !isMenuOpen" class="menu-button">
           <span
@@ -91,20 +91,19 @@ header {
   z-index: 999;
 }
 
-.header-content {
+.content {
   align-items: center;
   display: flex;
   height: 100%;
   justify-content: space-between;
-  margin-inline: auto;
-  max-width: 1200px;
+  padding: 0 40px;
 }
 
-.header-content.mobile {
+.content.mobile {
   display: none;
 }
 
-.header-content nav ul {
+.content nav ul {
   align-items: center;
   display: flex;
   gap: 40px;
@@ -114,18 +113,18 @@ header {
   width: 200px;
 }
 
-.header-content nav a:not(.logo) {
+.content nav a:not(.logo) {
   color: var(--black);
   font-size: 1.2rem;
   font-weight: 500;
   position: relative;
 }
 
-.header-content nav li:nth-child(2) a {
+.content nav li:nth-child(2) a {
   font-weight: 600;
 }
 
-.header-content nav a:before {
+.content nav a:before {
   background: var(--dark-blue);
   bottom: 0;
   content: "";
@@ -148,7 +147,7 @@ nav a:hover:not(.logo):before {
   gap: 20px;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .header-content {
     max-width: 1000px;
   }
@@ -224,5 +223,5 @@ nav a:hover:not(.logo):before {
   .header-content nav a:not(.logo) {
     font-size: 1.8rem;
   }
-}
+} */
 </style>

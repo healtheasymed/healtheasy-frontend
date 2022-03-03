@@ -1,6 +1,6 @@
 <template>
   <section id="especialidades">
-    <div class="especialidades-content">
+    <div class="content">
       <div class="titulo">
         <h2>O sistema ideal para sua</h2>
         <p>especialidade médica:</p>
@@ -28,19 +28,9 @@ export default {
   min-height: 55vh;
 }
 
-.especialidades-content {
+.content {
   background: var(--light-blue);
   height: 45vh;
-  padding-top: 8vh;
-  width: 100%;
-}
-
-.titulo {
-  font-weight: 700;
-  font-size: 2rem;
-
-  margin-inline: auto;
-  max-width: 1200px;
 }
 
 .titulo p {
