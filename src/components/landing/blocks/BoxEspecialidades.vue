@@ -63,32 +63,4 @@ export default {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-/* @media (max-width: 1200px) {
-  #box-especialidades {
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 1024px) {
-  #box-especialidades {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 768px) {
-  #box-especialidades {
-    grid-template-columns: repeat(3, 1fr);
-    height: auto;
-    max-width: 600px;
-    padding: 10px 0;
-  }
-}
-
-@media (max-width: 425px) {
-  #box-especialidades {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 300px;
-  }
-} */
 </style>

@@ -44,7 +44,7 @@ export default {
 .bg {
   background: var(--dark-purple);
   border-radius: 16px;
-  height: 80%;
+  height: 60vh;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -53,11 +53,33 @@ export default {
 }
 
 img {
-  display: block;
-  max-width: 100%;
+  height: auto;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .bg {
+    height: 70%;
+    width: 80%;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+/* @media (max-width: 668px) {
+  .bg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 504px) {
+  .bg {
+    display: none;
+  }
+} */
 </style>

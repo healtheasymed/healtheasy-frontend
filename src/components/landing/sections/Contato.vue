@@ -1,6 +1,6 @@
 <template>
   <section id="contato" ref="contato">
-    <div class="content">
+    <div class="content grid">
       <div class="titulo">
         <h2>Entre em <span>contato</span></h2>
         <p>
@@ -48,19 +48,13 @@ export default {
 <style scoped>
 #contato {
   background: var(--light-blue);
-  height: auto;
   min-height: 80vh;
 }
 
 .content {
   align-items: center;
-  display: grid;
-  grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
-  margin-inline: auto;
-  max-width: 1200px;
-  padding: 40px 0;
 }
 
 .titulo {
@@ -68,7 +62,6 @@ export default {
 }
 
 .titulo h2 {
-  font-weight: 700;
   font-size: 3rem;
   margin-bottom: 30px;
 }
@@ -78,10 +71,8 @@ export default {
 }
 
 .titulo p {
-  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  margin-inline: auto;
   text-align: left;
   width: 80%;
 }
@@ -92,25 +83,25 @@ export default {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-}
-
-/* @media (max-width: 1024px) {
-  #contato {
-    height: 60vh;
-  }
+  margin-inline: auto;
+  max-width: 320px;
 }
 
 @media (max-width: 768px) {
-  #contato {
-    height: auto;
+  .content.grid {
+    gap: 40px;
+    grid-template-rows: auto 1fr;
+    margin: 0;
   }
 
-  .contato-content {
-    gap: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 600px;
-    padding-bottom: 40px;
+  .titulo {
+    width: 100%;
   }
-} */
+}
+
+@media (max-width: 375px) {
+  .content {
+    padding: 40px 0 !important;
+  }
+}
 </style>

@@ -88,6 +88,7 @@ export default {
 
   height: auto;
   margin-inline: auto;
+  min-width: 280px;
   padding: 40px 0;
   text-align: center;
   width: 80%;
@@ -109,10 +110,4 @@ form {
   gap: 10px;
   margin: 10px 0;
 }
-
-/* @media (max-width: 425px) {
-  #form-contato {
-    width: 100%;
-  }
-} */
 </style>

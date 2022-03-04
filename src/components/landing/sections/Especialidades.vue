@@ -34,10 +34,16 @@ export default {
   max-width: 100%;
 }
 
+.titulo h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+
 .titulo p {
   color: var(--dark-blue);
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {

@@ -149,4 +149,10 @@ textarea {
 .input:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 615px) {
+  label {
+    max-width: 260px !important;
+  }
+}
 </style>

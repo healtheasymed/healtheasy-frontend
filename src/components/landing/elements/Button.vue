@@ -91,10 +91,17 @@ button:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 615px) {
+/* @media (max-width: 615px) {
   a.default-width,
   button.default-width {
     width: 100px !important;
+  }
+} */
+
+@media (max-width: 615px) {
+  a,
+  button {
+    max-width: 260px !important;
   }
 }
 </style>

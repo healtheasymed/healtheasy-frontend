@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="content">
+    <div class="content grid">
       <div class="footer-sobre">
         <img src="@/assets/logos/logo-assinatura-branco.png" alt="Health Easy - Logomarca" />
         <p>
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div class="copyright">
+    <div class="content copyright">
       <p>© 2021 - <span>Health Easy</span></p>
 
       <ul>
@@ -95,16 +95,13 @@ export default {
 footer {
   background: var(--black);
   font-size: 1.2rem;
-  min-height: 60vh;
+  min-height: 45vh;
 }
 
 .content {
   color: var(--white);
   align-items: center;
-  display: grid;
-  grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  height: 90%;
 }
 
 .footer-sobre img {
@@ -112,7 +109,7 @@ footer {
   max-width: 200px;
 }
 
-.footer-content h5 {
+.content h5 {
   font-size: 1.4rem;
 }
 
@@ -134,13 +131,9 @@ footer {
   text-align: center;
 }
 
-.footer-content,
 .copyright {
   color: var(--white);
-  margin-inline: auto;
-  max-width: 1200px;
   opacity: 0.8;
-  padding: 0 40px;
 }
 
 .copyright {
@@ -168,50 +161,29 @@ footer {
   color: var(--dark-green) !important;
 }
 
-/* @media (max-width: 1200px) {
-  .footer-content,
-  .copyright {
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer-content,
-  .copyright {
-    max-width: 800px;
-  }
-}
-
 @media (max-width: 768px) {
-  footer {
-    height: 45vh;
-    padding: 40px 0;
+  .content.grid {
+    grid-template-rows: repeat(3, 1fr) !important;
   }
 
-  .footer-content,
-  .copyright {
-    max-width: 600px;
-  }
-
-  .copyright {
-    flex-direction: column;
-    gap: 10px;
+  .footer-contato {
+    text-align: start;
   }
 }
 
-@media (max-width: 616px) {
-  footer {
-    height: auto;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    padding: 20px;
-  }
-
+@media (max-width: 665px) {
   .copyright {
-    margin-top: 20px;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 0 40px 40px !important;
   }
-} */
+
+  .copyright ul {
+    flex-direction: column;
+  }
+
+  .copyright ul li:nth-child(2) {
+    display: none;
+  }
+}
 </style>

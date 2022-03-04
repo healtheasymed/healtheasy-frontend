@@ -36,18 +36,10 @@ export default {
   max-width: 1200px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 1200px) {
   #box-planos {
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 1000px;
   }
-} */
-
-/*
-@media (max-width: 425px) {
-  #box-planos {
-    grid-template-columns: 1fr;
-    max-width: 300px;
-  }
-} */
+}
 </style>

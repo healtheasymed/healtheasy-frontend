@@ -1,19 +1,21 @@
 <template>
   <section id="sobre1">
-    <div class="content">
+    <div class="content grid">
       <div class="section-left">
-        <h1>Agenda médica na palma da mão</h1>
+        <div class="titulo">
+          <h2>Agenda médica na palma da mão</h2>
 
-        <p>
-          Com a agenda médica online do <b>Health Easy</b>, sua equipe controla
-          agendamentos, diminui faltas por meio do envio de SMS e e-mail e ganha
-          tempo para realizar o que realmente importa: o atendimento ao
-          paciente.
-        </p>
-        <p>
-          Com a agenda médica online do <b>Health Easy</b>, sua equipe controla
-          agendamentos.
-        </p>
+          <p>
+            Com a agenda médica online do <b>Health Easy</b>, sua equipe controla
+            agendamentos, diminui faltas por meio do envio de SMS e e-mail e ganha
+            tempo para realizar o que realmente importa: o atendimento ao
+            paciente.
+          </p>
+          <p>
+            Com a agenda médica online do <b>Health Easy</b>, sua equipe controla
+            agendamentos.
+          </p>
+        </div>
 
         <div class="left-chips">
           <Chip
@@ -59,33 +61,24 @@ export default {
 
 <style scoped>
 #sobre1 {
-  background: linear-gradient(
-    180deg,
-    var(--light-blue) 80%,
-    var(--light-green) 20%
-  );
+  background: var(--light-blue);
 }
 
 .content {
   align-items: center;
-  display: grid;
-  grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  margin-inline: auto;
-  max-width: 1200px;
-  min-height: 70vh;
+  min-height: 90vh;
 }
 
 .section-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
   width: 90%;
 }
 
-.section-left h1 {
+.section-left h2 {
   color: var(--dark-blue);
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .section-left p {
@@ -95,69 +88,22 @@ export default {
 .left-chips {
   display: flex;
   gap: 40px;
-  margin-top: 2rem;
-}
-
-.section-left b {
-  color: var(--dark-blue);
 }
 
 .section-right {
-  height: 100%;
-  margin-inline: auto;
-  position: relative;
   width: 90%;
 }
 
-.section-right img {
-  display: block;
-  max-width: 100%;
-}
-
-/* @media (max-width: 1200px) {
-  .sobre1-content {
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .sobre1-content {
-    max-width: 800px;
-  }
-
-  .section-left h1 {
-    font-size: 3.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .sobre1-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    max-width: 600px;
-    padding: 40px 0;
-  }
-
-  .section-left {
-    align-items: center;
-    grid-row: 2;
-    text-align: center;
-  }
-
-  .section-left h1 {
-    font-size: 3.4rem;
-  }
-}
-
-@media (max-width: 548px) {
-  .sobre1-content {
-    grid-template-rows: 1fr;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 668px) {
+  .section-left,
   .section-right {
-    width: 60%;
+    width: 100%;
   }
-} */
+
+  .left-chips {
+    flex-direction: column;
+    gap: 20px;
+    margin-inline: auto;
+  }
+}
 </style>

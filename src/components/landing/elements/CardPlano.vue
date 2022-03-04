@@ -46,6 +46,7 @@ export default {
 <style scoped>
 .card-plano {
   background: var(--light-blue);
+  border: 2px solid var(--dark-blue);
   border-radius: 6px;
   box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
 
@@ -138,7 +139,7 @@ export default {
   transform: scale(1.1);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 1200px) {
   .plano-1,
   .plano-3 {
     margin-top: 0;
@@ -151,5 +152,5 @@ export default {
   .plano-2:hover {
     transform: scale(1.1);
   }
-} */
+}
 </style>

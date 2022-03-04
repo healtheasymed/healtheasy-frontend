@@ -42,10 +42,6 @@ export default {
 }
 
 .section-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
   justify-content: center;
 }
 
@@ -56,36 +52,5 @@ export default {
 
 .section-left p {
   font-size: 1.2rem;
-}
-
-.section-right {
-  height: 100%;
-  margin-inline: auto;
-}
-
-@media (max-width: 768px) {
-  .content {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr;
-    min-height: 100vh;
-  }
-
-  .section-right {
-    order: 1;
-  }
-
-  .section-left {
-    order: 2;
-  }
-}
-
-@media (max-width: 375px) {
-  .section-left h1 {
-    font-size: 2.4rem;
-  }
-
-  .section-left p {
-    font-size: 1rem;
-  }
 }
 </style>

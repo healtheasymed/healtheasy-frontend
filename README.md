@@ -26,3 +26,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [ ] trocar imagem dos mockups
 - [ ] alinhar logomarca com a escrita
 - [ ] responsividade
+- [ ] conferir responsividade box especialidades x funcionalidades
+- [ ] menu hamburguer

@@ -1,14 +1,16 @@
 <template>
   <section id="planos">
-    <div class="titulo">
-      <h2>Nossos <span>planos</span></h2>
-      <p>
-        Lorem ipsum is common placeholder text used to demonstrate the graphic
-        elements of a document or visual presentation.
-      </p>
-    </div>
+    <div class="content">
+      <div class="titulo">
+        <h2>Nossos <span>planos</span></h2>
+        <p>
+          Lorem ipsum is common placeholder text used to demonstrate the graphic
+          elements of a document or visual presentation.
+        </p>
+      </div>
 
-    <BoxPlanos />
+      <BoxPlanos />
+    </div>
   </section>
 </template>
 
@@ -26,23 +28,19 @@ export default {
 
 <style scoped>
 #planos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-inline: auto;
-  max-width: 1200px;
-  min-height: 100vh;
-  padding-bottom: 80px;
+  background: linear-gradient(
+    180deg,
+    var(--light-green) 10%,
+    var(--white) 90%
+  );
 }
 
 .titulo {
-  margin-bottom: 5vh;
+  margin-bottom: 40px;
 }
 
 .titulo h2 {
-  font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
 .titulo span {
@@ -50,8 +48,13 @@ export default {
 }
 
 .titulo p {
-  font-size: 1.2rem;
-  line-height: 1.4;
+  margin-inline: 0;
   width: 60%;
+}
+
+@media (max-width: 375px) {
+  .titulo p {
+    width: 100%;
+  }
 }
 </style>

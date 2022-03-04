@@ -3,11 +3,11 @@
   <Home />
   <Especialidades />
   <Funcionalidades />
-  <!-- <SobreApp1 />
+  <SobreApp1 />
   <SobreApp2 />
   <Planos />
   <Contato />
-  <Footer /> -->
+  <Footer />
 </template>
 
 <script>

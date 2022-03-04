@@ -96,7 +96,7 @@ header {
   display: flex;
   height: 100%;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0;
 }
 
 .content.mobile {
