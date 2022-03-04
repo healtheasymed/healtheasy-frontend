@@ -94,7 +94,6 @@ export default {
 <style scoped>
 footer {
   background: var(--black);
-  font-size: 1.2rem;
   min-height: 45vh;
 }
 

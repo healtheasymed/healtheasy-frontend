@@ -19,7 +19,6 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-
 ## TODO:
 - [ ] animate.css
 - [ ] mdi-icons ou svg factory
