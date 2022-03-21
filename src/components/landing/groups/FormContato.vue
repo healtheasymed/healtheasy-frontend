@@ -7,7 +7,7 @@
         name="nome"
         :value="contato.nome"
         placeholder="Nome completo"
-        @input="contato.nome = $event"
+        @input="contato.nome = $event.target.value"
       />
 
       <Input
@@ -15,14 +15,14 @@
         type="email"
         :value="contato.email"
         placeholder="E-mail"
-        @input="contato.email = $event"
+        @input="contato.email = $event.target.value"
       />
 
       <Input
         name="assunto"
         :value="contato.assunto"
         placeholder="Assunto"
-        @input="contato.assunto = $event"
+        @input="contato.assunto = $event.target.value"
       />
 
       <Input
@@ -30,7 +30,7 @@
         :value="contato.mensagem"
         placeholder="Mensagem"
         isTextArea
-        @input="contato.mensagem = $event"
+        @input="contato.mensagem = $event.target.value"
       />
 
       <Button

@@ -9,20 +9,75 @@
         </p>
       </div>
 
-      <BoxPlanos />
+      <div class="plano-indicado">
+        <fieldset class="qnt-acessos">
+          <label for="qnt">Quantos profissionais utilizarão o sistema?</label>
+
+          <Input
+            name="qnt"
+            type="number"
+            :value="qntAcessos"
+            placeholder="Quantidade de Acessos"
+            @input="qntAcessos = $event.target.value"
+          />
+        </fieldset>
+
+        <CardPlano
+          v-if="qntAcessos"
+          :desconto="desconto"
+          :preco="precoFinal"
+          :servicos="planos.servicos"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import BoxPlanos from "@/components/landing/blocks/BoxPlanos";
+import { planos } from "@/static/landing-page";
+import Input from "@/components/landing/elements/Input";
+import CardPlano from "@/components/landing/elements/CardPlano";
 
 export default {
   name: "Planos",
 
   components: {
-    BoxPlanos,
+    Input,
+    CardPlano
   },
+
+  data () {
+    return {
+      qntAcessos: 0,
+      planos: planos
+    }
+  },
+
+  computed: {
+    precoFinal () {
+      let precoFinal = this.qntAcessos * planos.precoPadrao;
+
+      precoFinal = precoFinal - (precoFinal * this.desconto);
+
+      return precoFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}).replace('R$', '');
+    },
+
+    planoIndicado () {
+      if (this.qntAcessos >= 0 && this.qntAcessos <= 4) {
+        return this.planos.opcoes[0];
+      }
+
+      if (this.qntAcessos >= 5 && this.qntAcessos <= 10) {
+        return this.planos.opcoes[1];
+      }
+
+      return this.planos.opcoes[2];
+    },
+
+    desconto () {
+      return this.planoIndicado.desconto;
+    }
+  }
 };
 </script>
 
@@ -50,6 +105,30 @@ export default {
 .titulo p {
   margin-inline: 0;
   width: 60%;
+}
+
+.plano-indicado {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.qnt-acessos {
+  border: 1px solid var(--dark-blue);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 260px;
+  padding: 20px;
+}
+
+.qnt-acessos label {
+  color: var(--dark-blue);
+  font-weight: bold;
 }
 
 @media (max-width: 375px) {

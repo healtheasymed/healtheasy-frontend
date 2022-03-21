@@ -84,6 +84,10 @@ input:disabled {
   cursor: not-allowed;
 }
 
+input[type="number"] {
+  padding-right: 20px;
+}
+
 li {
   list-style: none;
 }

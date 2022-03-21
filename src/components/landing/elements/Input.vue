@@ -18,21 +18,22 @@
 
     <input
       v-if="!isTextArea"
-      v-model="model"
+      :value="value"
       :type="type"
       :name="name"
       :placeholder="placeholder"
-      @input="$emit('input', $event.target.value)"
-      @change="$emit('change', $event.target.value)"
+      min="0"
+      @input="$emit('input', $event)"
+      @change="$emit('change', $event)"
     />
 
     <textarea
       v-else
-      v-model="model"
+      :value="value"
       :name="name"
       :placeholder="placeholder"
-      @input="$emit('input', $event.target.value)"
-      @change="$emit('change', $event.target.value)"
+      @input="$emit('input', $event)"
+      @change="$emit('change', $event)"
     >
     </textarea>
   </label>
@@ -70,8 +71,7 @@ export default {
     },
 
     value: {
-      required: true,
-      type: String
+      required: true
     },
 
     placeholder: {

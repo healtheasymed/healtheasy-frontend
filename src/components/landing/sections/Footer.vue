@@ -37,7 +37,7 @@
             name="email"
             size="25"
           />
-          hello@landify.co
+          contato@healtheasy.com.br
         </p>
         <p>
           <mdicon

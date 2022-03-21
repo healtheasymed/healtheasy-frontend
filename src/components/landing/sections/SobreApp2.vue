@@ -1,6 +1,10 @@
 <template>
   <section id="sobre2">
     <div class="content grid">
+      <div class="section-right">
+        <ImageBG bgColor="var(--dark-blue)" />
+      </div>
+
       <div class="section-left">
         <div class="titulo">
           <h2>Agenda médica na palma da mão</h2>
@@ -32,10 +36,6 @@
             :width="200"
           />
         </div>
-      </div>
-
-      <div class="section-right">
-        <ImageBG bgColor="var(--dark-blue)" />
       </div>
     </div>
   </section>
