@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <div class="content">
+  <header :class="`${isMenuOpen ? 'open' : ''}`">
+    <div class="content" v-if="!isMobile">
       <nav>
         <ul class="">
           <li class="logo-item">
@@ -20,22 +20,21 @@
       </div>
     </div>
 
-    <div class="content mobile">
+    <div :class="`content mobile ${isMenuOpen ? 'open' : ''}`" v-else>
       <div class="header-top">
         <p @click="isMenuOpen = !isMenuOpen" class="menu-button">
           <span
             :class="`mdi mdi-${isMenuOpen ? 'close' : 'menu'}`"
-            style="fontsize: 30px"
           />
         </p>
 
-        <!-- <a href="#home" class="logo">
-          <img src="@/assets/-logo.png" alt=" - Logomarca" />
-        </a> -->
+        <router-link to="/#home" class="logo">
+          <img src="@/assets/logos/logo-assinatura.png" alt="Health Easy" />
+        </router-link>
 
-        <!-- <div class="header-buttons">
+         <div class="header-buttons">
           <Button text="Login" @click="redirectToApp" />
-        </div> -->
+        </div>
       </div>
 
       <transition name="menu-transition">
@@ -43,7 +42,7 @@
           <ul>
             <li class="logo-item"></li>
             <li class="menu-itens" v-for="item in menu" :key="item.id">
-              <a :href="item.link" @click="isMenuOpen = !isMenuOpen">{{
+              <a :href="item.link">{{
                 item.nome
               }}</a>
             </li>
@@ -69,13 +68,27 @@ export default {
     return {
       menu: menu,
       isMenuOpen: false,
+      isMobile: false
     };
+  },
+
+  created () {
+    window.addEventListener('resize', this.checkScreen);
   },
 
   methods: {
     redirectToApp() {
       window.location.href = window.location.origin + "/app";
     },
+
+    checkScreen () {
+      const windowWidth = window.innerWidth;
+      if (windowWidth <= 850) {
+        this.isMobile = true;
+        return;
+      }
+      this.isMobile = false;
+    }
   },
 };
 </script>
@@ -91,16 +104,19 @@ header {
   z-index: 999;
 }
 
+header.open {
+  border-right: 1px solid var(--light-gray);
+  height: 100vh;
+  position: fixed;
+  width: 60vw;
+}
+
 .content {
   align-items: center;
   display: flex;
   height: 100%;
   justify-content: space-between;
   padding: 0;
-}
-
-.content.mobile {
-  display: none;
 }
 
 .content nav ul {
@@ -147,81 +163,47 @@ nav a:hover:not(.logo):before {
   gap: 20px;
 }
 
-/* @media (max-width: 1200px) {
-  .header-content {
-    max-width: 1000px;
-  }
+.menu-button {
+  align-self: start;
+  cursor: pointer;
+  font-size: 1.8rem;
 }
 
-@media (max-width: 1024px) {
-  .header-content {
-    max-width: 800px;
-  }
+.content.mobile {
+  align-items: start;
+  flex-direction: column;
 }
 
-@media (max-width: 768px) {
-  .header-content {
-    max-width: 600px;
-  }
-
-  .header-content nav ul {
-    gap: 10px;
-  }
+.mobile.open > .header-top {
+  flex-direction: column;
+  gap: 20px;
 }
 
-@media (max-width: 616px) {
-  .header-content:not(.mobile) {
+.header-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content.mobile nav {
+  height: 100vh;
+  width: 100%;
+}
+
+.content.mobile nav ul {
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 550px) {
+  .mobile:not(.open) .header-buttons {
     display: none;
   }
 
-  .header-content.mobile {
-    display: flex;
-    position: relative;
+  .mobile:not(open) .header-top {
+    justify-content: start;
+    gap: 20px;
   }
-
-  .header-top {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    width: 100%;
-  }
-
-  .menu-button {
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .menu-transition-enter-active {
-    transition: all 0.4s ease;
-  }
-
-  .menu-transition-leave-active {
-    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
-  }
-
-  .menu-transition-enter,
-  .menu-transition-leave-to {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-
-  .header-content.mobile nav {
-    background: var(--white);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    width: 60vw;
-  }
-
-  .header-content.mobile nav ul {
-    flex-direction: column;
-    padding: 10vh 0;
-    gap: 40px;
-  }
-
-  .header-content nav a:not(.logo) {
-    font-size: 1.8rem;
-  }
-} */
+}
 </style>

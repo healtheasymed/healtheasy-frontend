@@ -34,7 +34,7 @@ export default {
     Planos,
     Contato,
     Footer,
-  },
+  }
 };
 </script>
 
