@@ -1,6 +1,6 @@
 <template>
   <div class="card-especialidade" v-show="especialidade">
-    <span class="mdi mdi-hammer-screwdriver" style="fontsize: 50px" />
+    <!-- <span class="mdi mdi-hammer-screwdriver" style="fontsize: 50px" /> -->
     <h5>{{ especialidade.nome }}</h5>
     <p>{{ especialidade.descricao }}</p>
   </div>

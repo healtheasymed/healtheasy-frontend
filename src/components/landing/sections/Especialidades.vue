@@ -54,15 +54,15 @@ export default {
 
 @media (max-width: 665px) {
   #especialidades {
-    min-height: 115vh;
+    min-height: 100vh;
   }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   #especialidades {
     min-height: 125vh;
   }
-}
+} */
 
 /* TODO: deixar dinamico */
 </style>

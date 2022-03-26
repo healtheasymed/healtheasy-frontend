@@ -73,7 +73,17 @@ export default {
   },
 
   created () {
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.checkScreen());
+    })
+  },
+
+  mounted () {
     window.addEventListener('resize', this.checkScreen);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkScreen);
   },
 
   methods: {
@@ -83,6 +93,7 @@ export default {
 
     checkScreen () {
       const windowWidth = window.innerWidth;
+
       if (windowWidth <= 850) {
         this.isMobile = true;
         return;
